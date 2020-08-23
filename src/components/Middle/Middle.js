@@ -53,7 +53,7 @@ function Middle() {
         </div>
         {loading}
         </form>
-        {carData &&<div className={classes.Text, classes.Data}>
+        {carData &&<div className={classes.Data}>
             <h2>פרטי הרכב:</h2>
             {tav && <h3>יש לרכב תג נכה</h3>}
             <p>מספר רכב: {carData.mispar_rechev}</p>

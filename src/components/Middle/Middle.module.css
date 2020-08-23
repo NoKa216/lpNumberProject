@@ -16,6 +16,10 @@
 }
 
 .Data {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     margin-top: -50px;
     margin-bottom: 20px;
 }
