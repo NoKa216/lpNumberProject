@@ -1,156 +1,89 @@
-.Middle{
-    width: 80%;
-    background-color: #fff;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: auto;
-    margin-top: 57px;
+.Middle {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .Text {
-    width: 80%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.Data {
-    width: 80%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin-top: -50px;
-    margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
 }
 
 .Plate {
-    width: 350px;
-    height: 90px;
-    top: 0;
-    left: 0;
-    z-index: 50;
+  width: 500px;
+  height: 130px;
+  z-index: 50;
 }
 
 .Lp {
-    position: relative;
-    bottom: 80px;
-    left: 10px;
-    z-index: 150;
-    width: 290px;
+  position: relative;
+  bottom: 120px;
+  left: 15px;
+  z-index: 150;
+  width: 400px;
 }
 
 .Input {
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    font-family: 'Teko', sans-serif;
-    font-size: 3.5rem;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    letter-spacing: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Teko", sans-serif;
+  font-size: 5rem;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 20px;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.BtnCon {
+  margin-top: -100px;
 }
 
 .Btn {
-    background-color: #3498db;
-    border: none;
-    margin-top: 10px;
-    margin-right: 100px ;
-    align-items: center;
-    border-radius: 5px;
-    color: #fff ;
-    outline: none;
-    cursor: pointer;
-    width: 100px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-.Btn:disabled {
-    color: #ccc;
-    cursor: not-allowed;
+.CarData {
+  text-align: right;
 }
 
-.Loader,
-.Loader:before,
-.Loader:after {
-  border-radius: 50%;
-}
-.Loader {
-  color: #3498db;
-  font-size: 11px;
-  text-indent: -99999em;
-  margin: 55px auto;
-  position: relative;
-  width: 10em;
-  height: 10em;
-  box-shadow: inset 0 0 0 1em;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
-.Loader:before,
-.Loader:after {
-  position: absolute;
-  content: '';
-}
-.Loader:before {
-  width: 5.2em;
-  height: 10.2em;
-  background: #ffffff;
-  border-radius: 10.2em 0 0 10.2em;
-  top: -0.1em;
-  left: -0.1em;
-  -webkit-transform-origin: 5.1em 5.1em;
-  transform-origin: 5.1em 5.1em;
-  -webkit-animation: load2 2s infinite ease 1.5s;
-  animation: load2 2s infinite ease 1.5s;
-}
-.Loader:after {
-  width: 5.2em;
-  height: 10.2em;
-  background: #ffffff;
-  border-radius: 0 10.2em 10.2em 0;
-  top: -0.1em;
-  left: 4.9em;
-  -webkit-transform-origin: 0.1em 5.1em;
-  transform-origin: 0.1em 5.1em;
-  -webkit-animation: load2 2s infinite ease;
-  animation: load2 2s infinite ease;
-}
-@-webkit-keyframes load2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  .Middle {
+    width: 100%;
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes load2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
+  .Plate {
+    width: 350px;
+    height: 90px;
+  }
 
-@media (max-width: 499px){
-    .Middle {
-        width: 100%;
-    }
+  .Lp {
+    position: relative;
+    bottom: 83px;
+    left: 10px;
+    width: 290px;
+  }
+
+  .Input {
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+  }
+
+  .BtnCon {
+    padding-top: 30px;
+  }
 }
